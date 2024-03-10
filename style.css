@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.menu-container {
+    display: flex;
+    gap: 40px;
+    background-color: rgb(0, 239, 179);
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-container>a,
+.drop1>a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 10px;
+}
+
+.menu-container>a:hover,
+.drop1>a:hover {
+    background-color: greenyellow;
+    color: black;
+    transition: 1s;
+}
+
+.dropdown button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop1items {
+    display: none;
+    height: fit-content;
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    background-color: rgb(0, 189, 0);
+}
+
+.dropdown:hover .drop1items {
+    display: block;
+}
+
+hr {
+    width: 85%;
+    border: 1px solid white;
+    margin: auto;
+}
+
+.drop1items a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-width: 50%;
+}
+
+#orange-menu {
+    border-bottom: 0;
+}
+
+.drop1items>a:hover,
+.drop2-btn>a:hover {
+    background-color: green;
+    transition: 1s;
+}
+
+.drop2-btn {
+    width: 200px;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.drop2 {
+    display: none;
+    height: fit-content;
+    width: 200px;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    background-color: rgb(76, 0, 174);
+}
+
+.drop2>a:hover {
+    background-color: rgb(92, 2, 210);
+    transition: 0.5s;
+}
+
+.dropdown2:hover .drop2 {
+    display: block;
+}
